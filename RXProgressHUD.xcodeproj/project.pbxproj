@@ -15,6 +15,8 @@
 		0D7D28401C9FA003003AC81A /* RXHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D283E1C9FA003003AC81A /* RXHUD.swift */; };
 		0D7D28411C9FA003003AC81A /* RXProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D283F1C9FA003003AC81A /* RXProgressHUD.swift */; };
 		0D7D28431C9FA0A9003AC81A /* HudTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D28421C9FA0A9003AC81A /* HudTableController.swift */; };
+		0D7D28481C9FBD47003AC81A /* 2016-03-21 13_14_28.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D28461C9FBD47003AC81A /* 2016-03-21 13_14_28.gif */; };
+		0D7D28491C9FBD47003AC81A /* 2016-03-21 13_09_16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D28471C9FBD47003AC81A /* 2016-03-21 13_09_16.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		0D7D283E1C9FA003003AC81A /* RXHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXHUD.swift; sourceTree = "<group>"; };
 		0D7D283F1C9FA003003AC81A /* RXProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXProgressHUD.swift; sourceTree = "<group>"; };
 		0D7D28421C9FA0A9003AC81A /* HudTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudTableController.swift; sourceTree = "<group>"; };
+		0D7D28461C9FBD47003AC81A /* 2016-03-21 13_14_28.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "2016-03-21 13_14_28.gif"; sourceTree = "<group>"; };
+		0D7D28471C9FBD47003AC81A /* 2016-03-21 13_09_16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "2016-03-21 13_09_16.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				0D7D283E1C9FA003003AC81A /* RXHUD.swift */,
 				0D7D283F1C9FA003003AC81A /* RXProgressHUD.swift */,
 				0D7D28421C9FA0A9003AC81A /* HudTableController.swift */,
+				0D7D28461C9FBD47003AC81A /* 2016-03-21 13_14_28.gif */,
+				0D7D28471C9FBD47003AC81A /* 2016-03-21 13_09_16.gif */,
 				0D7D28221C9F9FEA003AC81A /* Main.storyboard */,
 				0D7D28251C9F9FEA003AC81A /* Assets.xcassets */,
 				0D7D28271C9F9FEA003AC81A /* LaunchScreen.storyboard */,
@@ -184,6 +190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D7D28291C9F9FEA003AC81A /* LaunchScreen.storyboard in Resources */,
+				0D7D28481C9FBD47003AC81A /* 2016-03-21 13_14_28.gif in Resources */,
+				0D7D28491C9FBD47003AC81A /* 2016-03-21 13_09_16.gif in Resources */,
 				0D7D28261C9F9FEA003AC81A /* Assets.xcassets in Resources */,
 				0D7D28241C9F9FEA003AC81A /* Main.storyboard in Resources */,
 			);
@@ -394,6 +402,7 @@
 				0D7D283A1C9F9FEA003AC81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D7D283B1C9F9FEA003AC81A /* Build configuration list for PBXNativeTarget "RXProgressHUDUITests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +411,7 @@
 				0D7D283D1C9F9FEA003AC81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
