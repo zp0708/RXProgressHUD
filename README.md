@@ -1,5 +1,5 @@
 # RXProgressHUD
-###### RXProgressHUD是一个简单一用的HUD控件
+###### RXProgressHUD是一个简单易用的HUD控件
 ###### 使用方法
 
 ###### success
