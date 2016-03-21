@@ -1,8 +1,8 @@
 # RXProgressHUD
-
+###### RXProgressHUD是一个简单一用的HUD控件
 ###### 使用方法
 
-### success
+###### success
 <pre><code>
    HUD.showSuccessWithView(self.view, anim: false)
    HUD.showSuccess()
@@ -10,27 +10,27 @@
    HUD.show(true, duration: 0.25, delay: 1, content: .LabeledSuccess(title: "title", subtitle: "subtitle"))
 </code></pre>
 
-### error
+###### error
 <pre><code>
    HUD.showError()
    HUD.showError("error!")
    HUD.show(true, duration: 0.25, delay: 1, content: .LabeledError(title: "title", subtitle: "subtitle"))
 </code></pre>
 
-### progress
+###### progress
 <pre><code>
    HUD.show(.Progress)
    HUD.show(.SystemActivity)
 </code></pre>
 
-### HUD的三个基本方法
+###### HUD的三个基本方法
 <pre><code>
     static func show(anim:Bool, duration: NSTimeInterval,delay: NSTimeInterval,content: HUDContentType)
     static func hide(duration: NSTimeInterval, delay:NSTimeInterval, completion: (Bool -> Void)?)
     static func flash(content: HUDContentType, delay: NSTimeInterval, completion: (Bool -> Void)?)
 </code></pre>
    
-### 拓展的方法
+###### 拓展的方法
 <pre><code>
 
 // MARK: >>>>>>>>>> flash extension <<<<<<<<<<
@@ -77,7 +77,7 @@ extension RXHUDHelperHandle {
 }
 </code></pre>
 
-### 通过下面的一些设置可以自定义一些HUD的样式
+###### 通过下面的一些设置可以自定义一些HUD的样式
 <pre><code>
 # HUD一共有Dark和Light两种风格
   RXHUDHelper.sharedHUD.style = .Dark 
@@ -90,7 +90,7 @@ extension RXHUDHelperHandle {
 </code></pre>
 
 
-### 你可以通过对RXHUDHelperHandle协议进行拓展来获得自己需要的方法
+###### 你可以通过对RXHUDHelperHandle协议进行拓展来获得自己需要的方法
 <pre><code>
 extension RXHUDHelperHandle {
     static func show(content: HUDContentType) {
@@ -100,7 +100,7 @@ extension RXHUDHelperHandle {
 }
 </code></pre>
 
-### notice
+###### notice
 RXProgressHUD是我学习Swift时的一个练习项目，该项目是参考了:[PKHUD](https://github.com/pkluz/PKHUD) 
 
 
