@@ -2,7 +2,7 @@
 //  HudTableController.swift
 //  RXProgressHUD
 //
-//  Created by 融通汇信 on 16/3/21.
+//  Created by ZP on 16/3/21.
 //  Copyright © 2016年 ZP. All rights reserved.
 //
 
@@ -20,6 +20,7 @@ class HudTableController : UITableViewController {
         style = style == .Dark ? .Light : .Dark
         RXHUDHelper.sharedHUD.style = style
     }
+    
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)

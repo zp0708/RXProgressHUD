@@ -1,8 +1,8 @@
 //
 //  RXHUD.swift
-//  APengDai-Swift
+//  RXProgressHUD
 //
-//  Created by 融通汇信 on 16/3/18.
+//  Created by ZP on 16/3/18.
 //  Copyright © 2016年 rongtonghuixin. All rights reserved.
 //
 
