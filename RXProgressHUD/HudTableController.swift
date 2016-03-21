@@ -55,8 +55,8 @@ class HudTableController : UITableViewController {
             case 10:
                 HUD.showText("texttexttexttext!")
             default:
-                HUD.flash(.RotatingImage(UIImage(named: "progress")), delay: 2, completion: { (finish) -> Void in
-                    HUD.hideWithSuccess()
+                HUD.flash(.RotatingImage(RXHUDAssets.crossImage), delay: 5, completion: { (finish) -> Void in
+
                 })
         }
     }

@@ -372,10 +372,40 @@ public class RXHUDSquareBaseView: UIView {
 
 public class RXHUDAssets: NSObject {
     
-    public class var crossImage: UIImage { return RXHUDAssets.bundledImage(named: "cross") }
-    public class var checkmarkImage: UIImage { return RXHUDAssets.bundledImage(named: "checkmark") }
-    public class var progressActivityImage: UIImage { return RXHUDAssets.bundledImage(named: "progress_activity") }
-    public class var progressCircularImage: UIImage { return RXHUDAssets.bundledImage(named: "progress_circular") }
+    public class var crossImage: UIImage {
+        let iamge : UIImage = RXHUDAssets.bundledImage(named: "progress")
+
+        if RXHUDHelper.sharedHUD.style == .Dark {
+            return RXHUDAssets.changeColorWithImage(iamge, color: UIColor.whiteColor())
+        }else {
+            return iamge
+        }
+    }
+    public class var checkmarkImage: UIImage {
+        let iamge : UIImage = RXHUDAssets.bundledImage(named: "checkmark")
+
+        if RXHUDHelper.sharedHUD.style == .Dark {
+            return RXHUDAssets.changeColorWithImage(iamge, color: UIColor.whiteColor())
+        }else {
+            return iamge
+        }
+    }
+    public class var progressActivityImage: UIImage {
+        let iamge : UIImage = RXHUDAssets.bundledImage(named: "progress_activity")
+        if RXHUDHelper.sharedHUD.style == .Dark {
+            return RXHUDAssets.changeColorWithImage(iamge, color: UIColor.whiteColor())
+        }else {
+            return iamge
+        }
+    }
+    public class var progressCircularImage: UIImage {
+        let iamge : UIImage = RXHUDAssets.bundledImage(named: "progress_circular")
+        if RXHUDHelper.sharedHUD.style == .Dark {
+            return RXHUDAssets.changeColorWithImage(iamge, color: UIColor.whiteColor())
+        }else {
+            return iamge
+        }
+    }
     
     internal class func bundledImage(named name: String) -> UIImage {
         let bundle = NSBundle(forClass: RXHUDAssets.self)
@@ -385,5 +415,22 @@ public class RXHUDAssets: NSObject {
         }
         
         return UIImage()
+    }
+    
+    class func changeColorWithImage(currentImg: UIImage,color:UIColor) -> UIImage {
+        if let image : UIImage = currentImg {
+            let rect = CGRectMake(0.0, 0.0, image.size.width, image.size.height)
+            UIGraphicsBeginImageContextWithOptions(rect.size, false, image.scale);
+            let c = UIGraphicsGetCurrentContext()
+            image.drawInRect(rect)
+            CGContextSetFillColorWithColor(c,color.CGColor)
+            CGContextSetBlendMode(c, .SourceAtop)
+            CGContextFillRect(c, rect)
+            let tintedImage = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext()
+            return tintedImage
+        } else {
+            return UIImage()
+        }
     }
 }

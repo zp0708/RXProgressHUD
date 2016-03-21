@@ -72,12 +72,12 @@ public final class HUD : RXHUDHelperHandle{
     }
     
     static func hide(duration: NSTimeInterval, delay:NSTimeInterval, completion: (Bool -> Void)?) {
-        RXHUDHelper.sharedHUD.hideWithDelay(delay, completion: completion)
+        RXHUDHelper.sharedHUD.hide(delay, duration: duration, completed: completion)
     }
     
     static func flash(content: HUDContentType, delay: NSTimeInterval, completion: (Bool -> Void)?) {
-        HUD.show(content)
-        HUD.hide(hud_duration, completion: completion)
+        RXHUDHelper.sharedHUD.contentView = HUD.contentView(content)
+        RXHUDHelper.sharedHUD.show(autoDimiss: false, anim: true, delayTime: delay)
     }
 }
 
